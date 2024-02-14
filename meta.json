@@ -1,0 +1,16 @@
+{
+    "workflow_environment":"SimStack",
+    "title": "EV_Analysis",
+    "description": "This is a WaNo for creating graphs",
+    "authors": [
+        "J. Schaarschmidt",
+        "A. Buldin"
+    ],
+    "version": "0.0.1",
+    "logo": "EV_Analysis.png",
+    "keywords": [
+        "SimStack",
+        "WaNo",
+        "EV_Analysis"
+    ]
+}

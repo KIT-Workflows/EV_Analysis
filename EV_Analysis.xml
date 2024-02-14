@@ -1,0 +1,30 @@
+<WaNoTemplate>
+    <WaNoMeta>
+        <Author>
+            <Name> J. Schaarschmidt </Name>
+        </Author>
+
+        <Description>
+            This script generates a plot of energy versus volume from a set of data files. This script is used for analyzing the relationship between energy and volume of a crystal structure after applying strain, and it visualizes the data in a graph format.
+        </Description>
+
+    </WaNoMeta>
+
+    <WaNoRoot name="EV_analysis">
+        <WaNoFile logical_filename="relax.pwo" name="relax pwo">relax</WaNoFile>
+    </WaNoRoot>
+
+    <WaNoExecCommand>
+        simstack_server_mamba_source
+        conda activate qe
+        python EV_analysis.py
+    </WaNoExecCommand>
+
+    <WaNoInputFiles>
+        <WaNoInputFile logical_filename="EV_analysis.py">EV_analysis.py</WaNoInputFile>
+    </WaNoInputFiles>
+
+    <WaNoOutputFiles>
+        <WaNoOutputFile>energy_volume_graph.png</WaNoOutputFile>
+    </WaNoOutputFiles>
+</WaNoTemplate>
