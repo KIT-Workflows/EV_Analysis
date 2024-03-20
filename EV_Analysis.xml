@@ -11,7 +11,7 @@
     </WaNoMeta>
 
     <WaNoRoot name="EV_analysis">
-        <WaNoFile logical_filename="output.pwo" name="output pwo file from QE_jobs Calculate energy">relax</WaNoFile>
+        <WaNoFile logical_filename="output.pwo" name="output pwo file from QE_jobs Calculate energy">output.pwo</WaNoFile>
     </WaNoRoot>
 
     <WaNoExecCommand>
