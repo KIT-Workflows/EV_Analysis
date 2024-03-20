@@ -11,12 +11,14 @@
     </WaNoMeta>
 
     <WaNoRoot name="EV_analysis">
-        <WaNoFile logical_filename="relax.pwo" name="relax pwo">relax</WaNoFile>
+        <WaNoFile logical_filename="output.pwo" name="output pwo file from QE_jobs Calculate energy">relax</WaNoFile>
     </WaNoRoot>
 
     <WaNoExecCommand>
-        simstack_server_mamba_source
+        export NANOVER=V4
+    	source $NANOMATCH/$NANOVER/local_anaconda/bin/activate
         conda activate qe
+        export PSEUDOPOTENTIALS_PATH="{{- wano.pseudopotentials_path -}}"
         python EV_analysis.py
     </WaNoExecCommand>
 

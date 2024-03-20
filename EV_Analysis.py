@@ -1,14 +1,18 @@
+import os
 import matplotlib.pyplot as plt
 import glob
 
 from pwtools import io
 
 
+os.environ['ESPRESSO_PSEUDO'] = os.getenv('PSEUDOPOTENTIALS_PATH', os.getcwd())
+
+
 def create_energy_volume_data_file():
     """
-    Reads energy and volume data from '*.pwo' files and writes to 'energy_volume_data.txt'.
+    Reads energy and volume data from 'output.pwo' files and writes to 'energy_volume_data.txt'.
 
-    This function searches for all '*.pwo' files in the current directory. For each file,
+    This function searches for all 'output.pwo' files in the current directory. For each file,
     it reads the total energy and volume using the `pwtools` library. If both energy and
     volume are available (non-None), the function writes them to 'energy_volume_data.txt'.
     In case of missing data (None values), an error message is written to 'error.txt'.
