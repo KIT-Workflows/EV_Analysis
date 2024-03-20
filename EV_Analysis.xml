@@ -15,8 +15,7 @@
     </WaNoRoot>
 
     <WaNoExecCommand>
-        export NANOVER=V4
-    	source $NANOMATCH/$NANOVER/local_anaconda/bin/activate
+        simstack_server_mamba_source
         conda activate qe
         export PSEUDOPOTENTIALS_PATH="{{- wano.pseudopotentials_path -}}"
         python EV_analysis.py
