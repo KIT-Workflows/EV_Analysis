@@ -18,7 +18,7 @@
         simstack_server_mamba_source
         micromamba activate qe
         export PSEUDOPOTENTIALS_PATH="{{- wano.pseudopotentials_path -}}"
-        python EV_analysis.py
+        python EV_Analysis.py
     </WaNoExecCommand>
 
     <WaNoInputFiles>
