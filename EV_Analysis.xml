@@ -22,7 +22,7 @@
     </WaNoExecCommand>
 
     <WaNoInputFiles>
-        <WaNoInputFile logical_filename="EV_analysis.py">EV_analysis.py</WaNoInputFile>
+        <WaNoInputFile logical_filename="EV_Analysis.py">EV_Analysis.py</WaNoInputFile>
     </WaNoInputFiles>
 
     <WaNoOutputFiles>
